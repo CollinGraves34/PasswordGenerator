@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-top">
+          <h1 class="display-4">Password Generator</h1>
+          <p class="lead">Select the options you desire and click generate.</p>
+        </div>
+      </div>
+    <div class="container content">
+        <div class="container-fluid anb">
+            <div class="alert alert-primary" role="alert" id="new">
+                Please Click the Generate buttom below to generate a new Password.
+            </div>
+            <br>
+            <button type="button" id="generate" class="btn btn-primary">Generate</button>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="form-group">
+                <label id="lengthLabel" for="formControlRange">Max Password Lengths: 6 Characters</label>
+                <input type="range" class="form-control-range" value="6" min="6" max="52" id="length" onchange="rangeCount()">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="upper" checked class="form-check-input">
+                <label  class="form-check-label">Use Upper Case</label>
+                <br>
+                <input type="checkbox" id="lower" checked class="form-check-input">
+                <label  class="form-check-label">Use Lower Case</label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="number">
+                <label class="form-check-label" for="defaultCheck1">
+                  Include Numbers
+                </label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="symbol">
+                <label class="form-check-label" for="defaultCheck1">
+                  Include Symbols
+                </label>
+            </div>
+            <br id="break">
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

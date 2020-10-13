@@ -1,0 +1,39 @@
+.content {
+    background-color: rgb(61, 61, 61);
+    margin: auto;
+    margin-top: -32px;
+    padding: 10px;
+    border-radius: 8px;
+    color: whitesmoke;
+}
+body {
+    background-color: rgb(39, 39, 39)!important;
+}
+
+#input {
+    width: 350px;
+}
+#generate {
+    margin-top: 25px;
+    outline: none;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: rgb(39, 39, 39)!important;
+    color: whitesmoke;
+}
+
+.alert {
+    text-align: center;
+    display: inline;
+}
+
+.anb {
+    text-align: center;
+    padding: 10px;
+}
+
+hr{
+    clear: both;
+}
