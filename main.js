@@ -1,12 +1,11 @@
 //Communicating with the DOM
 
-var result = document.getElementById("new");
+var resultEl = document.getElementById("new");
 var lengthEl = document.getElementById("length");
 var numberEl = document.getElementById("number");
 var lowerEl = document.getElementById("lower");
 var upperEl = document.getElementById("upper");
 var symbolEl = document.getElementById("symbol");
-var copyEl = document.getElementById("copy");
 var generateEl = document.getElementById("generate");
 
 const randomFunc = {
@@ -24,7 +23,7 @@ generateEl.addEventListener('click', () =>{
     const hasNumber = numberEl.checked;
     const hasSymbol = symbolEl.checked;
 
-result.innerText = generatePassword(hasUpper, hasLower, hasNumber, hasSymbol, length);
+resultEl.innerText = generatePassword(hasUpper, hasLower, hasNumber, hasSymbol, length);
 });
 
 
@@ -79,5 +78,5 @@ function rangeCount(){
     var element = document.getElementById("length").value;
     var display = document.getElementById("lengthLabel");
 
-    display.innerText = "Max Password Length: " + element + " Characters";
+    display.innerText = `Max Password Length: ${element} Characters`;
 }
